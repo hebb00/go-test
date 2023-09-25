@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "github.com/hebb00/hello"
+)
 
 func main() {
-    fmt.Println("Hello, World!")
+    // Get a greeting message and print it.
+    message := greetings.Hello("hebbs")
+    fmt.Println(message)
 }
