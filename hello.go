@@ -10,6 +10,9 @@ func main() {
     // Get a greeting message and print it.
     message := greetings.Hello("hebbs")
     fmt.Println(message)
+    defer fmt.Println("world")
+
+	fmt.Println("hello")
     i, j := 42, 2701
 
 	p := &i         // point to i
