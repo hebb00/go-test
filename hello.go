@@ -23,11 +23,8 @@ func main() {
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) 
-	//slice
-	primes := [6]int{2, 3, 5, 7, 11, 13}
 
-	var s []int = primes[1:4]
-	fmt.Println(s)
+
 	// Changing the elements of a slice modifies the corresponding elements of its underlying array. 
 	names := [4]string{
 		"John",
@@ -44,4 +41,21 @@ func main() {
 	b[0] = "XXX"
 	fmt.Println(a, b)
 	fmt.Println(names)
+	var s []int
+	printSlice(s)
+
+	// append works on nil slices.
+	s = append(s, 0)
+	printSlice(s)
+
+	// The slice grows as needed.
+	s = append(s, 1)
+	printSlice(s)
+
+	// We can add more than one element at a time.
+	s = append(s, 2, 3, 4)
+	printSlice(s)
+}
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 }
