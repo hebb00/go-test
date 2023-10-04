@@ -19,4 +19,17 @@ func (t T) M() {
 func test() {
 	var i I = T{"hello"}
 	i.M()
+	var g interface{} //An empty interface may hold values of any type
+	describe(g)
+
+	g = 42
+	describe(g)
+
+	g = "hello"
+	describe(g)
+}
+
+
+func describe(g interface{}) {
+	fmt.Printf("(%v, %T)\n", g, g)
 }
