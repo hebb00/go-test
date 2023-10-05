@@ -27,6 +27,20 @@ func test() {
 
 	g = "hello"
 	describe(g)
+	//Type assertions
+	var h interface{} = "hello"
+
+	s := h.(string)
+	fmt.Println(s)
+
+	s, ok := h.(string)
+	fmt.Println(s, ok)
+
+	f, ok := h.(float64)
+	fmt.Println(f, ok)
+
+	f = h.(float64) // panic
+	fmt.Println(f)
 }
 
 
