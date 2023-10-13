@@ -7,6 +7,7 @@ import (
 	pr "github.com/hebb00/print"
 	cards "github.com/hebb00/slice"
 	str "github.com/hebb00/strings"
+	bj "github.com/hebb00/switch"
 )
 
 func main() {
@@ -16,6 +17,7 @@ func main() {
 	fmt.Printf(pr.AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298))
 	item := cards.GetItem(slice,3)
 	fmt.Printf("item is %d",item)
+	fmt.Printf(bj.FirstTurn("ace", "ace", "jack"))
 
 }
 
