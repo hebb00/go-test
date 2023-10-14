@@ -7,10 +7,16 @@ import (
 	pr "github.com/hebb00/print"
 	cards "github.com/hebb00/slice"
 	str "github.com/hebb00/strings"
+	stc "github.com/hebb00/struct"
 	bj "github.com/hebb00/switch"
 )
 
+
+
+
+
 func main() {
+
 	slice := []int{4,5,6,7,8}
 	cars.CalculateCost(3)
 	fmt.Printf(str.CleanupMessage("*********\n hi*\n******"))
@@ -18,6 +24,8 @@ func main() {
 	item := cards.GetItem(slice,3)
 	fmt.Printf("item is %d",item)
 	fmt.Printf(bj.FirstTurn("ace", "ace", "jack"))
+	car:=stc.NewCar(5,3)
+	fmt.Print(car)
 
 }
 

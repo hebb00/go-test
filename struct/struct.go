@@ -2,7 +2,7 @@ package speed
 
 // TODO: define the 'Car' type struct
 type Car struct { 
-    battery int
+    battery int 
     batteryDrain int
     speed int
     distance int
@@ -23,6 +23,7 @@ func NewCar(speed, batteryDrain int) Car {
 }
 
 
+
 // TODO: define the 'Track' type struct
 type Track struct {
     distance int
@@ -37,17 +38,16 @@ func NewTrack(distance int) Track {
 // Drive drives the car one time. If there is not enough battery to drive one more time,
 // the car will not move.
 func Drive(car Car) Car {
-
-if car.battery != 0{
-  return  Car{
-		battery: car.battery - car.batteryDrain,
-		batteryDrain: car.batteryDrain,
-		speed: car.speed,
-		distance: car.speed,
+    bt:= car.battery - car.batteryDrain
+    if bt < 0{
+        return car
     }
-}
-return car
-
+    return  Car{
+      battery: bt,
+      batteryDrain: car.batteryDrain,
+      speed: car.speed,
+      distance: car.speed + car.distance,
+  }
 }
 
 // CanFinish checks if a car is able to finish a certain track.
