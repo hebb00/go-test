@@ -26,6 +26,7 @@ func main() {
 	fmt.Printf(bj.FirstTurn("ace", "ace", "jack"))
 	car:=stc.NewCar(5,3)
 	fmt.Print(car)
+	fmt.Print(bj.ParseCard("jack"))
 
 }
 
