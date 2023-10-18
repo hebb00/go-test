@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	cars "github.com/hebb00/cars"
+	bird "github.com/hebb00/for"
 	pr "github.com/hebb00/print"
 	cards "github.com/hebb00/slice"
 	str "github.com/hebb00/strings"
@@ -27,6 +28,8 @@ func main() {
 	car:=stc.NewCar(5,3)
 	fmt.Print(car)
 	fmt.Print(bj.ParseCard("jack"))
+	fmt.Print(bird.TotalBirdCount(slice))
+
 
 }
 
