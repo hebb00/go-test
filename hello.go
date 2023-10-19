@@ -7,6 +7,7 @@ import (
 	cars "github.com/hebb00/cars"
 	bird "github.com/hebb00/for"
 	pr "github.com/hebb00/print"
+	rd "github.com/hebb00/random"
 	cards "github.com/hebb00/slice"
 	str "github.com/hebb00/strings"
 	stc "github.com/hebb00/struct"
@@ -31,6 +32,8 @@ func main() {
 	fmt.Print(bj.ParseCard("jack"))
 	fmt.Println(bird.TotalBirdCount(slice))
 	fmt.Print(rand.Float64()*12)
+	fmt.Print(rd.ShuffleAnimals())
+
 
 
 }
