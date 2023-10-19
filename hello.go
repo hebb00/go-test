@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 
 	cars "github.com/hebb00/cars"
 	bird "github.com/hebb00/for"
@@ -28,7 +29,8 @@ func main() {
 	car:=stc.NewCar(5,3)
 	fmt.Print(car)
 	fmt.Print(bj.ParseCard("jack"))
-	fmt.Print(bird.TotalBirdCount(slice))
+	fmt.Println(bird.TotalBirdCount(slice))
+	fmt.Print(rand.Float64()*12)
 
 
 }
