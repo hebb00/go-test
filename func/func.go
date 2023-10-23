@@ -29,3 +29,12 @@ func AddSecretIngredient(frList, myList []string){
 	i:=len(frList)-1
 	myList[i]=frList[i]
 }
+
+// TODO: define the 'ScaleRecipe()' function
+func ScaleRecipe(amount []float64, portion int)[]float64 {
+	q:=amount
+	for i:=0; i<len(amount); i++{
+		q[i]=amount[i]*float64(portion) 
+	}
+	return q
+}
