@@ -23,3 +23,9 @@ func Quantities(layers []string) (int, float64){
 	return n*50, float64(s)*0.2 
     
 }
+// TODO: define the 'AddSecretIngredient()' function
+
+func AddSecretIngredient(frList, myList []string){
+	i:=len(frList)-1
+	myList[i]=frList[i]
+}
