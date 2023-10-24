@@ -20,6 +20,7 @@ import (
 
 
 func main() {
+	input:=   []float64{0.5, 250, 150, 3, 0.5}
 	friendsList:=[]string{"sauce", "noodles", "béchamel", "marjoram"}
 	myList:=     []string{"sauce", "noodles", "meat", "tomatoes", "?"}
 	slice := []int{4,5,6,7,8}
@@ -36,7 +37,7 @@ func main() {
 	fmt.Print(rand.Float64()*12)
 	fmt.Print(rd.ShuffleAnimals())
 	f.AddSecretIngredient(friendsList,myList)
-
+	f.ScaleRecipe(input,5)
 
 
 }
