@@ -6,6 +6,7 @@ import (
 
 	cars "github.com/hebb00/cars"
 	bird "github.com/hebb00/for"
+	f "github.com/hebb00/func"
 	pr "github.com/hebb00/print"
 	rd "github.com/hebb00/random"
 	cards "github.com/hebb00/slice"
@@ -19,7 +20,8 @@ import (
 
 
 func main() {
-
+	friendsList:=[]string{"sauce", "noodles", "béchamel", "marjoram"}
+	myList:=     []string{"sauce", "noodles", "meat", "tomatoes", "?"}
 	slice := []int{4,5,6,7,8}
 	cars.CalculateCost(3)
 	fmt.Printf(str.CleanupMessage("*********\n hi*\n******"))
@@ -33,6 +35,7 @@ func main() {
 	fmt.Println(bird.TotalBirdCount(slice))
 	fmt.Print(rand.Float64()*12)
 	fmt.Print(rd.ShuffleAnimals())
+	f.AddSecretIngredient(friendsList,myList)
 
 
 

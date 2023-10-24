@@ -29,7 +29,8 @@ func Quantities(layers []string) (int, float64) {
 
 func AddSecretIngredient(frList, myList []string) {
 	i := len(frList) - 1
-	myList[i] = frList[i]
+	x:= len(myList) - 1
+	myList[x] = frList[i]
 }
 
 // TODO: define the 'ScaleRecipe()' function
