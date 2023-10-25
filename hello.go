@@ -13,6 +13,7 @@ import (
 	str "github.com/hebb00/strings"
 	stc "github.com/hebb00/struct"
 	bj "github.com/hebb00/switch"
+	t "github.com/hebb00/time"
 )
 
 
@@ -38,6 +39,7 @@ func main() {
 	fmt.Print(rd.ShuffleAnimals())
 	f.AddSecretIngredient(friendsList,myList)
 	f.ScaleRecipe(input,5)
+	fmt.Print(t.Schedule("2/29/2112 11:59:59"))
 
 
 }
