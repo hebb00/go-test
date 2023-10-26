@@ -6,22 +6,18 @@ import (
 
 // Schedule returns a time.Time from a string containing a date.
 func Schedule(date string) time.Time {
-	
     layout := "1/2/2006 15:04:05"
     t, _ := time.Parse(layout,date)
-
 	return t
 
 }
 
 // HasPassed returns whether a date has passed.
 func HasPassed(date string) bool {
-	panic("Please implement the HasPassed function")
 }
 
 // IsAfternoonAppointment returns whether a time is in the afternoon.
 func IsAfternoonAppointment(date string) bool {
-	panic("Please implement the IsAfternoonAppointment function")
 }
 
 // Description returns a formatted string of the appointment time.
