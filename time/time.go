@@ -14,10 +14,12 @@ func Schedule(date string) time.Time {
 
 // HasPassed returns whether a date has passed.
 func HasPassed(date string) bool {
+	panic("Please implement the HasPassed function")
 }
 
 // IsAfternoonAppointment returns whether a time is in the afternoon.
 func IsAfternoonAppointment(date string) bool {
+	panic("Please implement the IsAfternoonAppointment function")
 }
 
 // Description returns a formatted string of the appointment time.
