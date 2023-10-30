@@ -39,7 +39,8 @@ func main() {
 	fmt.Print(rd.ShuffleAnimals())
 	f.AddSecretIngredient(friendsList,myList)
 	f.ScaleRecipe(input,5)
-	fmt.Print(t.Schedule("2/29/2112 11:59:59"))
+	// fmt.Print(t.Schedule("2/29/2112 11:59:59"))
+	fmt.Print(t.HasPassed("October 3, 2019 20:32:00"))
 
 
 }
