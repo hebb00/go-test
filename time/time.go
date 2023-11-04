@@ -6,9 +6,9 @@ import (
 
 // Schedule returns a time.Time from a string containing a date.
 func Schedule(date string) time.Time {
-	
-    layout := "1/2/2006 15:04:05"
-    t, _ := time.Parse(layout,date)
+
+	layout := "1/2/2006 15:04:05"
+	t, _ := time.Parse(layout, date)
 	return t
 
 }
@@ -16,16 +16,24 @@ func Schedule(date string) time.Time {
 // HasPassed returns whether a date has passed.
 func HasPassed(date string) bool {
 
-	d,_ := time.Parse("January 2, 2006 15:04:05",date)
-	now:= time.Now()
-	isAfter:= now.After(d)
+	d, _ := time.Parse("January 2, 2006 15:04:05", date)
+	now := time.Now()
+	isAfter := now.After(d)
 	return isAfter
 
 }
 
 // IsAfternoonAppointment returns whether a time is in the afternoon.
 func IsAfternoonAppointment(date string) bool {
-	panic("Please implement the IsAfternoonAppointment function")
+
+	d, _ := time.Parse("Monday, January 2, 2006 15:04:05", date)
+
+	if d.Hour() >= 12 && d.Hour() < 18 {
+
+		return true
+	}
+
+	return false
 }
 
 // Description returns a formatted string of the appointment time.
