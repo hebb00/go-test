@@ -1,6 +1,7 @@
 package booking
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -38,6 +39,11 @@ func IsAfternoonAppointment(date string) bool {
 
 // Description returns a formatted string of the appointment time.
 func Description(date string) string {
+	//"7/25/2019 13:45:00"
+	d, _ := time.Parse("1/2/2006 15:04:05", date)
+	fmt.Print("date after parsing",d.Month())
+
+	// => "You have an appointment on Thursday, July 25, 2019, at 13:45."
 	panic("Please implement the Description function")
 }
 
