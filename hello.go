@@ -42,7 +42,7 @@ func main() {
 	// fmt.Print(t.Schedule("2/29/2112 11:59:59"))
 	fmt.Print(t.HasPassed("October 3, 2019 20:32:00"))
 	fmt.Print(t.Description("7/2/2007 15:04:05"))
-
+	fmt.Print(	t.AnniversaryDate())
 
 }
 
