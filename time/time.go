@@ -1,7 +1,6 @@
 package booking
 
 import (
-	"fmt"
 	"time"
 )
 
@@ -39,13 +38,11 @@ func IsAfternoonAppointment(date string) bool {
 
 // Description returns a formatted string of the appointment time.
 func Description(date string) string {
-	//"7/25/2019 13:45:00"
 	d, _ := time.Parse("1/2/2006 15:04:05", date)
-	t:= d.Format(time.UnixDate)
-	// fmt.Print("date after parsing",d.Month())
-	fmt.Println("Same, in UTC:", t)
-	// => "You have an appointment on Thursday, July 25, 2019, at 13:45."
-	panic("Please implement the Description function")
+
+	return d.Format("You have an appointment on Monday, January 2, 2006, at 15:04.")
+
+	 
 }
 
 // AnniversaryDate returns a Time with this year's anniversary.
