@@ -2,7 +2,16 @@ package gross
 
 // Units stores the Gross Store unit measurements.
 func Units() map[string]int {
-	panic("Please implement the Units() function")
+	
+	var myUnits map[string]int
+	myUnits["quarter_of_a_dozen"] = 3
+	myUnits["half_of_a_dozen"] = 6
+	myUnits["dozen"] = 12
+	myUnits["small_gross"] = 120
+	myUnits["gross"] = 144
+	myUnits["great_gross"] = 1728
+
+	return myUnits
 }
 
 // NewBill creates a new bill.
