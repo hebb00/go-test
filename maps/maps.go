@@ -2,7 +2,6 @@ package gross
 
 // Units stores the Gross Store unit measurements.
 func Units() map[string]int {
-
 	var myUnits = make(map[string]int, 0)
 	myUnits["quarter_of_a_dozen"] = 3
 	myUnits["half_of_a_dozen"] = 6
@@ -10,7 +9,6 @@ func Units() map[string]int {
 	myUnits["small_gross"] = 120
 	myUnits["gross"] = 144
 	myUnits["great_gross"] = 1728
-
 	return myUnits
 }
 
