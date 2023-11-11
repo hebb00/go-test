@@ -7,6 +7,7 @@ import (
 	cars "github.com/hebb00/cars"
 	bird "github.com/hebb00/for"
 	f "github.com/hebb00/func"
+	m "github.com/hebb00/maps"
 	pr "github.com/hebb00/print"
 	rd "github.com/hebb00/random"
 	cards "github.com/hebb00/slice"
@@ -43,6 +44,12 @@ func main() {
 	fmt.Print(t.HasPassed("October 3, 2019 20:32:00"))
 	fmt.Print(t.Description("7/2/2007 15:04:05"))
 	fmt.Print(	t.AnniversaryDate())
+	bill:= m.NewBill()
+	units:= m.Units()
+	m.AddItem(bill, units, "carrot", "dozen")
+	m.AddItem(bill, units, "carrot", "half_of_a_dozen")
+	m.AddItem(bill, units, "tom", "dozen")
+	m.AddItem(bill, units, "tom", "half_of_a_dozen")
 
 }
 
