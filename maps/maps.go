@@ -14,8 +14,8 @@ func Units() map[string]int {
 
 // NewBill creates a new bill.
 func NewBill() map[string]int {
-	var myUnits = make(map[string]int, 0)
-	return myUnits
+	var myBill = make(map[string]int, 0)
+	return myBill
 }
 
 // AddItem adds an item to customer bill.
