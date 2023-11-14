@@ -26,10 +26,6 @@ func NewBill() map[string]int {
 // Output: true (since dozen is a valid unit)
 func AddItem(bill, units map[string]int, item, unit string) bool {
 	
-    // Return false if the given unit is not in the units map.
-    // Otherwise add the item to the customer bill, indexed by the item name, then return true.
-    // If the item is already present in the bill, increase its quantity by the amount that belongs to the provided unit.
-
   value, exists := units[unit]
   v, e := bill[item]
   if exists == false{
