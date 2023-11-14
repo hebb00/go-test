@@ -18,12 +18,7 @@ func NewBill() map[string]int {
 	return myBill
 }
 
-// AddItem adds an item to customer bill.
-//bill := NewBill()
-// units := Units()
-// ok := AddItem(bill, units, "carrot", "dozen")
-// fmt.Println(ok)
-// Output: true (since dozen is a valid unit)
+
 func AddItem(bill, units map[string]int, item, unit string) bool {
 	
   value, exists := units[unit]
