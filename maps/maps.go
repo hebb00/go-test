@@ -48,6 +48,7 @@ func RemoveItem(bill, units map[string]int, item, unit string) bool {
 	}
 	bill[item]= bill[item] - units[unit]
 	if bill[item] < 0{
+		delete(bill, item)
 		return false
 	
 	}
