@@ -40,7 +40,6 @@ func CountInRank(cb Chessboard, rank int) int {
 
 			}
 		}
-
 	}
 	return c
 }
