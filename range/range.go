@@ -29,8 +29,8 @@ func CountInFile(cb Chessboard, file string) int {
 // within the given rank.
 func CountInRank(cb Chessboard, rank int) int {
 	var c int
-	for _, x := range cb {
-		if rank >= 1 && rank <= 8 {
+	if rank >= 1 && rank <= 8 {
+		for _, x := range cb {
 			for rr, i := range x {
 				if rr == rank {
 					if i == true {
