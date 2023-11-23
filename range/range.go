@@ -49,9 +49,7 @@ func CountInRank(cb Chessboard, rank int) int {
 func CountAll(cb Chessboard) int {
 	var c int
 	for _, x := range cb {
-		
-			c=c+len(x)
-		
+		c = c + len(x)
 
 	}
 	return c
