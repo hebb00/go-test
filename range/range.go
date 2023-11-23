@@ -32,12 +32,11 @@ func CountInRank(cb Chessboard, rank int) int {
 	for _, x := range cb {
 		if rank >= 1 && rank <= 8 {
 			for rr, i := range x {
-				if rr == rank{
+				if rr == rank {
 					if i == true {
-					c++
-				}	
+						c++
+					}
 				}
-			
 
 			}
 		}
@@ -48,7 +47,14 @@ func CountInRank(cb Chessboard, rank int) int {
 
 // CountAll should count how many squares are present in the chessboard.
 func CountAll(cb Chessboard) int {
-	panic("Please implement CountAll()")
+	var c int
+	for _, x := range cb {
+		
+			c=c+len(x)
+		
+
+	}
+	return c
 }
 
 // CountOccupied returns how many squares are occupied in the chessboard.
