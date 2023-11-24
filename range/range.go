@@ -32,7 +32,7 @@ func CountInRank(cb Chessboard, rank int) int {
 	if rank >= 1 && rank <= 8 {
 		for _, x := range cb {
 			for rr, i := range x {
-				if rr == rank {
+				if rr+1 == rank {
 					if i == true {
 						c++
 					}
