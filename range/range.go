@@ -58,14 +58,12 @@ func CountAll(cb Chessboard) int {
 func CountOccupied(cb Chessboard) int {
 	var c int
 	for _, x := range cb {
-			for _, i := range x {
-				if i == true {
-					c++
-				}
-
+		for _, i := range x {
+			if i == true {
+				c++
 			}
-	
 
+		}
 	}
 	return c
 }
