@@ -3,8 +3,10 @@ package electionday
 // NewVoteCounter returns a new vote counter with
 // a given number of initial votes.
 func NewVoteCounter(initialVotes int) *int {
+
 	var c *int
 	c = &initialVotes
+	
 	return c
 }
 
