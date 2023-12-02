@@ -15,6 +15,9 @@ func VoteCount(counter *int) int {
 
 	var b int
 	b = *counter 
+	if counter == nil {
+		return 0
+	}
 	return b
 
 }
