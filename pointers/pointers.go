@@ -6,13 +6,17 @@ func NewVoteCounter(initialVotes int) *int {
 
 	var c *int
 	c = &initialVotes
-	
+
 	return c
 }
 
 // VoteCount extracts the number of votes from a counter.
 func VoteCount(counter *int) int {
-	panic("Please implement the VoteCount() function")
+
+	var b int
+	b = *counter 
+	return b
+
 }
 
 // IncrementVoteCount increments the value in a vote counter.
