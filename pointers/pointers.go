@@ -18,9 +18,11 @@ func VoteCount(counter *int) int {
 	return b
 }
 
+
 // IncrementVoteCount increments the value in a vote counter.
 func IncrementVoteCount(counter *int, increment int) {
-	panic("Please implement the IncrementVoteCount() function")
+	*counter = *counter +increment
+	
 }
 
 // NewElectionResult creates a new election result.
