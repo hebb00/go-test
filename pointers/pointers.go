@@ -24,9 +24,13 @@ func IncrementVoteCount(counter *int, increment int) {
 	*counter = *counter +increment
 	
 }
-
+type  ElectionResult struct{
+	name string
+	vote int
+}
 // NewElectionResult creates a new election result.
 func NewElectionResult(candidateName string, votes int) *ElectionResult {
+	
 }
 
 // DisplayResult creates a message with the result to be displayed.
