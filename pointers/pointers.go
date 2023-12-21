@@ -25,13 +25,13 @@ func IncrementVoteCount(counter *int, increment int) {
 	
 }
 type  ElectionResult struct{
-	name string
-	vote int
+	Name string
+	Vote int
 }
 // NewElectionResult creates a new election result.
 func NewElectionResult(candidateName string, votes int) *ElectionResult {
 	var pp ElectionResult
-	pp = ElectionResult{name: candidateName, vote: votes}
+	pp = ElectionResult{Name: candidateName, Vote: votes}
 	var p *ElectionResult
 	p = &pp
 	return p
