@@ -30,8 +30,10 @@ type  ElectionResult struct{
 }
 // NewElectionResult creates a new election result.
 func NewElectionResult(candidateName string, votes int) *ElectionResult {
+	var pp ElectionResult
+	pp = ElectionResult{name: candidateName, vote: votes}
 	var p *ElectionResult
-	p = &ElectionResult{name: candidateName, vote: votes}
+	p = &pp
 	return p
 
 }
