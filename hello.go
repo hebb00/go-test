@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 
 	cars "github.com/hebb00/cars"
 	bird "github.com/hebb00/for"
@@ -19,9 +18,30 @@ import (
 
 
 
+type Vertex struct {
+	X, Y float64
+}
 
+func (v *Vertex) Scale(f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
+
+func ScaleFunc(v *Vertex, f float64) {
+	v.X = v.X * f
+	v.Y = v.Y * f
+}
 
 func main() {
+	v := Vertex{3, 4}
+	v.Scale(2)
+	ScaleFunc(&v, 10)
+
+	p := &Vertex{4, 3}
+	p.Scale(3)
+	ScaleFunc(p, 8)
+
+	fmt.Println(v, p)
 	input:=   []float64{0.5, 250, 150, 3, 0.5}
 	friendsList:=[]string{"sauce", "noodles", "béchamel", "marjoram"}
 	myList:=     []string{"sauce", "noodles", "meat", "tomatoes", "?"}
@@ -36,7 +56,6 @@ func main() {
 	fmt.Print(car)
 	fmt.Print(bj.ParseCard("jack"))
 	fmt.Println(bird.TotalBirdCount(slice))
-	fmt.Print(rand.Float64()*12)
 	fmt.Print(rd.ShuffleAnimals())
 	f.AddSecretIngredient(friendsList,myList)
 	f.ScaleRecipe(input,5)
