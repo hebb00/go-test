@@ -32,11 +32,11 @@ func (v *Vertex) Scale(f float64) {
 func main() {
 	v := Vertex{3, 4}
 	v.Scale(2)
-	ScaleFunc(&v, 10)
+
 
 	p := &Vertex{4, 3}
 	p.Scale(3)
-	ScaleFunc(p, 8)
+	
 
 	fmt.Println(v, p)
 	input:=   []float64{0.5, 250, 150, 3, 0.5}
