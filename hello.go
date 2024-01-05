@@ -18,26 +18,26 @@ import (
 
 
 
-type Vertex struct {
+type n struct {
 	X, Y float64
 }
 
-func (v *Vertex) Scale(f float64) {
+func (v *n) Scale(f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
 }
 
-func ScaleFunc(v *Vertex, f float64) {
+func ScaleFunc(v *n, f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
 }
 
 func main() {
-	v := Vertex{3, 4}
+	v := n{3, 4}
 	v.Scale(2)
 	ScaleFunc(&v, 10)
 
-	p := &Vertex{4, 3}
+	p := &n{4, 3}
 	p.Scale(3)
 	ScaleFunc(p, 8)
 
