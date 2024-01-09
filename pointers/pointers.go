@@ -30,7 +30,7 @@ type  ElectionResult struct{
 }
 // NewElectionResult creates a new election result.
 func NewElectionResult(candidateName string, votes int) *ElectionResult {
-
+	panic("Please implement the DisplayResult() function")
 
 }
 
