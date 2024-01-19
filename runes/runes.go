@@ -1,10 +1,14 @@
 package runes
 
-import "unicode/utf8"
+import (
+	"fmt"
+	"reflect"
+)
+  
+
 
 var myString = "❗hello"
 var stringLength = len(myString)
-var numberOfRunes = utf8.RuneCountInString(myString)
 
 // fmt.Printf("myString - Length: %d - Runes: %d\n", stringLength, numberOfRunes)
 // Output: myString - Length: 8 - Runes: 6
