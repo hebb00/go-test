@@ -2,13 +2,26 @@ package point
 
 import "fmt"
 
+func zeroval(ival int) {
+    ival = 0
+}
+func zeroptr(iptr *int) {
+    *iptr = 0
+}
 func poi() {
-	i, j := 42, 2701
+	i := 1
+    fmt.Println("initial:", i)
 
-	p := &i         // point to i
+	
+
+    zeroval(i)
+    fmt.Println("zeroval:", i)
+	v, j := 42, 2701
+
+	p := &v         // point to i
 	fmt.Println(*p) // read i through the pointer
 	*p = 21         // set i through the pointer
-	fmt.Println(i)  // see the new value of i
+	fmt.Println(v)  // see the new value of i
 
 	p = &j         // point to j
 	*p = *p / 37   // divide j through the pointer
