@@ -33,5 +33,8 @@ func poi() {
     fmt.Printf("Type of variable x is %T\n", x)
     fmt.Printf("Value of x in hexadecimal is %X\n", x)
     fmt.Printf("Value of x in decimal is %v\n", x)
+	for i := 0; i < 4; i++{ 
+		fmt.Printf("test\n")   
+	  } 
      
 }
