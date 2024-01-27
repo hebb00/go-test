@@ -36,5 +36,10 @@ func poi() {
 	for i := 0; i < 4; i++{ 
 		fmt.Printf("test\n")   
 	  } 
+	  ii:= 0 
+	  for ii < 3 { 
+		 ii += 2 
+	  } 
+	fmt.Println(ii)  
      
 }
