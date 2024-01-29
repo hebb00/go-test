@@ -8,17 +8,33 @@ import (
 
 func main() {
 
-	slice := []int{4,5,6,7,8}
-	cars.CalculateCost(3)
-	fmt.Printf(str.CleanupMessage("*********\n hi*\n******"))
-	fmt.Printf(pr.AssignTable("Christiane", 27, "Frank", "on the left", 23.7834298))
-	item := cards.GetItem(slice,3)
-	fmt.Printf("item is %d",item)
-	fmt.Printf(bj.FirstTurn("ace", "ace", "jack"))
-	car:=stc.NewCar(5,3)
-	fmt.Print(car)
-	fmt.Print(bj.ParseCard("jack"))
-	fmt.Println(bird.TotalBirdCount(slice))
-	fmt.Print(rd.ShuffleAnimals())
+	
+	// Unlike arrays, slices are typed only by the
+	// elements they contain (not the number of elements).
+	// An uninitialized slice equals to nil and has
+	// length 0.
+	var s []string
+	fmt.Println("uninit:", s, s == nil, len(s) == 0)
+
+	// To create an empty slice with non-zero length, use
+	// the builtin `make`. Here we make a slice of
+	// `string`s of length `3` (initially zero-valued).
+	// By default a new slice's capacity is equal to its
+	// length; if we know the slice is going to grow ahead
+	// of time, it's possible to pass a capacity explicitly
+	// as an additional parameter to `make`.
+	s = make([]string, 3)
+	fmt.Println("emp:", s, "len:", len(s), "cap:", cap(s))
+
+	// We can set and get just like with arrays.
+	s[0] = "a"
+	s[1] = "b"
+	s[2] = "c"
+	fmt.Println("set:", s)
+	fmt.Println("get:", s[2])
+
+	// `len` returns the length of the slice as expected.
+	fmt.Println("len:", len(s))
+
 
 }
