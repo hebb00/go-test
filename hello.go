@@ -2,15 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	cars "github.com/hebb00/cars"
-	bird "github.com/hebb00/for"
-	pr "github.com/hebb00/print"
-	rd "github.com/hebb00/random"
-	cards "github.com/hebb00/slice"
-	str "github.com/hebb00/strings"
-	stc "github.com/hebb00/struct"
-	bj "github.com/hebb00/switch"
 )
 
 
