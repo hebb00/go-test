@@ -36,5 +36,16 @@ func main() {
 	// `len` returns the length of the slice as expected.
 	fmt.Println("len:", len(s))
 
+	// In addition to these basic operations, slices
+	// support several more that make them richer than
+	// arrays. One is the builtin `append`, which
+	// returns a slice containing one or more new values.
+	// Note that we need to accept a return value from
+	// `append` as we may get a new slice value.
+	s = append(s, "d")
+	s = append(s, "e", "f")
+	fmt.Println("apd:", s)
+
+	// Slices can also be `copy`'d. Here we create an
 
 }
