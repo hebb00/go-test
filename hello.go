@@ -100,5 +100,8 @@ func main() {
             likes[l] = append(likes[l], p)
         }
     }
+	for _, p := range likes["cheese"] {
+        fmt.Println(p.Name, "likes cheese.")
+    }
 
 }
