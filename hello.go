@@ -29,23 +29,12 @@ func main() {
 	// Slices can also be `copy`'d. Here we create an
 	// empty slice `c` of the same length as `s` and copy
 	// into `c` from `s`.
-	c := make([]string, len(s))
-	copy(c, s)
-	fmt.Println("cpy:", c)
+
 
 	// Slices support a "slice" operator with the syntax
 	// `slice[low:high]`. For example, this gets a slice
 	// of the elements `s[2]`, `s[3]`, and `s[4]`.
-	l := s[2:5]
-	fmt.Println("sl1:", l)
 
-	// This slices up to (but excluding) `s[5]`.
-	l = s[:5]
-	fmt.Println("sl2:", l)
-
-	// And this slices up from (and including) `s[2]`.
-	l = s[2:]
-	fmt.Println("sl3:", l)
 
 	// We can declare and initialize a variable for slice
 	// in a single line as well.
@@ -88,7 +77,16 @@ func main() {
 
 	r := []bool{true, false, true, true, false, true}
 	fmt.Println(r)
+	s := []int{2, 3, 5, 7, 11, 13}
 
+	s = s[1:4]
+	fmt.Println(s)
+
+	s = s[:2]
+	fmt.Println(s)
+
+	s = s[1:]
+	fmt.Println(s)
 
 
 }
