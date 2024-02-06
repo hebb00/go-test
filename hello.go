@@ -103,5 +103,12 @@ func main() {
 	for _, p := range likes["cheese"] {
         fmt.Println(p.Name, "likes cheese.")
     }
+		q := []int{2, 3, 5, 7, 11, 13}
+	fmt.Println(q)
+
+	r := []bool{true, false, true, true, false, true}
+	fmt.Println(r)
+
+
 
 }
