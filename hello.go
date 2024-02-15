@@ -2,17 +2,12 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
 
 
 
 func main() {
-	x:=[]string{"ant","beaver","cat","dog", "elephant", "fox", "giraffe", "hedgehog"}
-    rand.Shuffle(len(x), func(i, j int) {
-	x[i], x[j] = x[j], x[i]
-	t := []string{"g", "h", "i"}
-	fmt.Println("dcl:", t)
+
 
 	twoD := make([][]int, 3)
 	for i := 0; i < 3; i++ {
