@@ -49,5 +49,14 @@ func main() {
 	s = s[1:]
 	fmt.Println(s)
 
-
+}
+// TODO: define the 'ScaleRecipe()' function
+func ScaleRecipe(amount []float64, portion int)[]float64 {
+	var q = make([]float64,len(amount),cap(amount))
+    p:= float64(portion) /2
+	for i:=0; i<len(amount); i++{
+		q[i]=amount[i]*p
+	}
+	fmt.Print(amount,q,p)
+	return q
 }
