@@ -50,13 +50,25 @@ func main() {
 	fmt.Println(s)
 
 }
-// TODO: define the 'ScaleRecipe()' function
-func ScaleRecipe(amount []float64, portion int)[]float64 {
-	var q = make([]float64,len(amount),cap(amount))
-    p:= float64(portion) /2
-	for i:=0; i<len(amount); i++{
-		q[i]=amount[i]*p
+// TODO: define the 'AddSecretIngredient()' function
+
+func AddSecretIngredient(frList, myList []string) {
+	i := len(frList) - 1
+	x:= len(myList) - 1
+	myList[x] = frList[i]
+}
+// TODO: define the 'Quantities()' function
+func Quantities(layers []string) (int, float64) {
+	var s, n int
+	for i := 0; i < len(layers); i++ {
+
+		if layers[i] == "noodles" {
+			n++
+		}
+		if layers[i] == "sauce" {
+			s++
+		}
 	}
-	fmt.Print(amount,q,p)
-	return q
+	return n * 50, float64(s) * 0.2
+
 }
