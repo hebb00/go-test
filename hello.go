@@ -91,3 +91,9 @@ func Units() map[string]int {
 	myUnits["great_gross"] = 1728
 	return myUnits
 }
+
+// NewBill creates a new bill.
+func NewBill() map[string]int {
+	var myBill = make(map[string]int, 0)
+	return myBill
+}
