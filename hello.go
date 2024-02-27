@@ -80,20 +80,4 @@ func PreparationTime(layers []string, apt int) int {
 	return len(layers) * apt
 
 }
-// Units stores the Gross Store unit measurements.
-func Units() map[string]int {
-	var myUnits = make(map[string]int, 0)
-	myUnits["quarter_of_a_dozen"] = 3
-	myUnits["half_of_a_dozen"] = 6
-	myUnits["dozen"] = 12
-	myUnits["small_gross"] = 120
-	myUnits["gross"] = 144
-	myUnits["great_gross"] = 1728
-	return myUnits
-}
 
-// NewBill creates a new bill.
-func NewBill() map[string]int {
-	var myBill = make(map[string]int, 0)
-	return myBill
-}
