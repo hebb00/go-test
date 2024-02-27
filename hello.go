@@ -2,7 +2,18 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 )
+
+// RollADie returns a random int d with 1 <= d <= 20.
+func RollADie() int {
+	rand:= rand.Intn(20)
+    if rand ==0 {
+        return 1 
+    }
+return rand
+}
+
 
 
 
