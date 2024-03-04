@@ -20,7 +20,10 @@ func GenerateWandEnergy() float64 {
     return r
     
 }
-
+// HappyBirthday wishes happy birthday to the birthday person and exclaims their age.
+func HappyBirthday(name string, age int) string {
+	return fmt.Sprintf("Happy birthday %s! You are now %d years old!", name, age)
+}
 
 
 func main() {
