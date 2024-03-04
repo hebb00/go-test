@@ -20,14 +20,7 @@ func GenerateWandEnergy() float64 {
     return r
     
 }
-// ShuffleAnimals returns a slice with all eight animal strings in random order.
-func ShuffleAnimals() []string {
-	x:=[]string{"ant","beaver","cat","dog", "elephant", "fox", "giraffe", "hedgehog"}
-    rand.Shuffle(len(x), func(i, j int) {
-	x[i], x[j] = x[j], x[i]
-})
-return x
-}
+
 
 
 func main() {
