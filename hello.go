@@ -2,24 +2,8 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
 
-// RollADie returns a random int d with 1 <= d <= 20.
-func RollADie() int {
-	rand:= rand.Intn(20)
-    if rand ==0 {
-        return 1 
-    }
-return rand
-}
-// GenerateWandEnergy returns a random float64 f with 0.0 <= f < 12.0.
-func GenerateWandEnergy() float64 {
-	r:= rand.Float64()*12
-
-    return r
-    
-}
 // HappyBirthday wishes happy birthday to the birthday person and exclaims their age.
 func HappyBirthday(name string, age int) string {
 	return fmt.Sprintf("Happy birthday %s! You are now %d years old!", name, age)
