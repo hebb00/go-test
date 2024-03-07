@@ -9,6 +9,26 @@ func HappyBirthday(name string, age int) string {
 	return fmt.Sprintf("Happy birthday %s! You are now %d years old!", name, age)
 }
 
+type Car struct { 
+    battery int 
+    batteryDrain int
+    speed int
+    distance int
+}
+var car = Car{
+    battery:100,
+    batteryDrain:2,
+    speed:5,
+}
+// NewCar creates a new remote controlled car with full battery and given specifications.
+func NewCar(speed, batteryDrain int) Car {
+	return Car{
+        speed: speed,
+        batteryDrain: batteryDrain,
+        battery:100,
+        
+    }
+}
 
 func main() {
 
