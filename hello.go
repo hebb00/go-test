@@ -20,6 +20,11 @@ var car = Car{
     batteryDrain:2,
     speed:5,
 }
+// Welcome greets a person by name.
+func printCar(car Car) string {
+	return fmt.Sprint(car)
+}
+
 // NewCar creates a new remote controlled car with full battery and given specifications.
 func NewCar(speed, batteryDrain int) Car {
 	return Car{
