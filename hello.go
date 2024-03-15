@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 // HappyBirthday wishes happy birthday to the birthday person and exclaims their age.
@@ -23,6 +24,12 @@ var car = Car{
 // Welcome greets a person by name.
 func printCar(car Car) string {
 	return fmt.Sprint(car)
+}
+// CleanupMessage cleans up an old marketing message.
+func CleanupMessage(oldMsg string) string {
+    str := strings.TrimSpace(oldMsg)
+   return strings.Trim(str,"* \n*") 
+     
 }
 
 // NewCar creates a new remote controlled car with full battery and given specifications.
