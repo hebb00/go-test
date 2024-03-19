@@ -38,6 +38,34 @@ func ParseCard(card string) int {
 		return 0
 	}
 }
+// player and one card of the dealer.
+func FirstTurn(card1, card2, dealerCard string) string {
+	score := ParseCard(card1) + ParseCard(card2)
+	switch {
+	case score == 22:
+		return "P"
+	case score == 21:
+		if ParseCard(dealerCard) != 10 && ParseCard(dealerCard) != 11 {
+			return "W"
+		} else {
+			return "S"
+		}
+	case score >= 12 && score <= 16:
+		if 7 <= ParseCard(dealerCard) {
+			return "H"
+		} else {
+			return "S"
+		}
+	case score >= 17 && score <= 20:
+		return "S"
+	case score <= 11:
+		return "H"
+	default:
+		return "H"
+	}
+
+}
+
 type Car struct { 
     battery int 
     batteryDrain int
