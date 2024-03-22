@@ -65,7 +65,29 @@ func FirstTurn(card1, card2, dealerCard string) string {
 	}
 
 }
+type File []bool
 
+// Declare a type named Chessboard which contains a map of eight Files, accessed with keys from "A" to "H"
+type Chessboard map[string]File
+
+// CountInFile returns how many squares are occupied in the chessboard,
+// within the given file.
+func CountInFile(cb Chessboard, file string) int {
+	var c int
+	for k, x := range cb {
+		if k == file {
+			for _, i := range x {
+				if i == true {
+					c++
+				}
+
+			}
+		}
+
+	}
+	return c
+
+}
 type Car struct { 
     battery int 
     batteryDrain int
